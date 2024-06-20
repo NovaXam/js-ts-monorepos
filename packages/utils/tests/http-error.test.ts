@@ -1,4 +1,4 @@
-import { HTTPError, HTTPErrorKind } from "@shlack/utils";
+import { HTTPError, HTTPErrorKind } from "@mymonorepo/utils";
 
 describe("HTTPError tests", function () {
   test("creation", () => {

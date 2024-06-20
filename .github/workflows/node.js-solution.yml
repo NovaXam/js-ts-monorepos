@@ -32,8 +32,7 @@ jobs:
           **/node_modules
         key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
       
-    - name: Use (Volta) Node.js ${{ matrix.node-version }}
-      uses: volta-cli/action@v1
+    - name: Use Node.js ${{ matrix.node-version }}
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies

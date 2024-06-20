@@ -1,0 +1,14 @@
+{
+  "name": "@mymonorepo/utils",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf ./dist *.tsbuildinfo",
+    "test": "jest ./tests",
+    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint src --ext .js,.ts"
+  }
+}

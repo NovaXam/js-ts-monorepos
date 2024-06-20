@@ -37,7 +37,7 @@ export async function apiCall(
   init?: RequestInit
 ): Promise<unknown> {
   let response;
-  let json;
+  let json: null | Promise<Record<string, string | number | boolean>> ;
   try {
     const jsonRespInfo = await getJSON(`/api/${path}`, init);
     response = jsonRespInfo.response;

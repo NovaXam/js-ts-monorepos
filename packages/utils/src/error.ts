@@ -20,8 +20,7 @@ export function stringifyError(errorDescription: string, err: unknown): string {
   return `${errorDescription}\n${
     err instanceof Error
       ? stringifyErrorValue(err)
-      : err
-      // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
+      : err // eslint-disable-next-line
       ? '' + err
       : '(missing error information)'
   }`;
