@@ -1,6 +1,5 @@
 import { formatTimestamp } from "@mymonorepo/utils";
 
-console.log("testing here")
 describe("formatTimestamp() tests", function () {
   let x = 4;
   test("01-01-2020", () => {
